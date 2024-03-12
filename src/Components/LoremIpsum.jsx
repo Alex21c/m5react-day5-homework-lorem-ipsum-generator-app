@@ -55,8 +55,8 @@ export default function LoremIpsum(){
 
   // Return JSX
   return (
-    <div className="text-[1.2rem] mt-[1rem] m-[auto] p-[2rem] border-2 border-[#94360b] max-w-[50rem] flex flex-col items-center rounded-xl shadow-2xl gap-[1rem] ">
-      <header className="flex flex-col gap-[1rem] justify-center items-center">
+    <div id='wrapperLoremIpsumGenerator' className="text-[1.2rem] mt-[1rem] m-[auto] p-[2rem] border-2 border-[#94360b] max-w-[50rem] flex flex-col items-center justify-center rounded-xl shadow-2xl gap-[1rem] ">
+      <header id='headerLoremIpsumGenerator' className="flex flex-col gap-[1rem] justify-center items-center">
         <h1 className='font-semibold text-[2.5rem] smallCaps' >Lorem Ipsum Generator</h1>
         <form className="flex gap-[1rem] items-center ">
           <label htmlFor="inputNumsLoremIpsumParagraphsToGenerate">Paragraphs</label>

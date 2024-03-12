@@ -27,3 +27,21 @@ body{
 .smallCaps{
   font-variant: small-caps;
 }
+
+@media screen and (max-width: 840px){
+  div#wrapperLoremIpsumGenerator{
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px){
+
+  header#headerLoremIpsumGenerator h1{
+    font-size:2.2rem;
+    text-align: center;
+  }
+  header#headerLoremIpsumGenerator form{
+    flex-direction: column;
+    
+  }
+}
