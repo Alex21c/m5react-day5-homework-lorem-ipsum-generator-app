@@ -1,5 +1,6 @@
 import { useState } from "react";
 import dbLorem from '../dbLorem.json';
+import Paragraph1 from "./Paragraph1";
 
 export default function LoremIpsum(){
   // console.log(dbLorem.data)
@@ -76,8 +77,17 @@ export default function LoremIpsum(){
       </header>
       <section>
         <h2 className="displayNone">Generated Lorem Ipsum</h2>
-        <div>
-          {stateGeneratedLoremParagraphs.map( (paragraph, key)=> `<p key=${key}>${paragraph}</p>` )}
+        <div className="flex flex-col gap-[1rem]">
+
+          {
+            stateGeneratedLoremParagraphs.map((paragraph, key) => {
+              
+             return <Paragraph1 key={key} data={[key,paragraph]}></Paragraph1>
+                         
+            })
+            
+          }
+
         </div>
       </section>
     </div>
