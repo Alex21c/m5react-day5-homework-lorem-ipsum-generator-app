@@ -1,10 +1,10 @@
 import './App.css';
 import './Assests/fontAwesomeProIcons/fontAwesomeIcons.css';
-
+import LoremIpsum from './Components/LoremIpsum';
 function App() {
   return (
     <div>
-      Our React App, is up and running!
+      <LoremIpsum/>
     </div>
 
   );
